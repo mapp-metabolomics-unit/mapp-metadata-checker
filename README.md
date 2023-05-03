@@ -10,7 +10,7 @@
 
 <p align="center">
     <a href="https://github.com/mapp-metabolomics-unit/mapp-metadata-checker/actions/workflows/tests.yml">
-        <img alt="Tests" src="https://github.com/mapp-metabolomics-unit/mapp-metadata-checker/workflows/tests.yml/badge.svg" />
+        <img alt="Tests" src="https://github.com/mapp-metabolomics-unit/mapp-metadata-checker/workflows/Tests/badge.svg" />
     </a>
     <a href="https://pypi.org/project/mapp_metadata_checker">
         <img alt="PyPI" src="https://img.shields.io/pypi/v/mapp_metadata_checker" />
