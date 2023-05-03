@@ -30,3 +30,16 @@ def headers_reader(table_path):
     df = pd.read_csv(table_path, sep=",", comment="#", dtype=str)
     headers = df.columns.tolist()
     return headers
+
+
+def table_tsver(in_path, out_path):
+    """
+    Load a table from a path and write it as a TSV file.
+
+    :param in_path: The path to the input table file.
+    :type in_path: str
+    :param out_path: The path to the output TSV file.
+    :type out_path: str
+    """
+    df = pd.read_csv(in_path, sep=",", comment="#", dtype=str)
+    df.to_csv(out_path, sep="\t", index=False)
