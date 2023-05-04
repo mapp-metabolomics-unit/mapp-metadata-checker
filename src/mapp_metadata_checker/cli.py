@@ -17,6 +17,8 @@ import logging
 
 import click
 
+from .utils import table_tsver
+
 __all__ = [
     "main",
 ]
@@ -29,6 +31,15 @@ logger = logging.getLogger(__name__)
 def main():
     """CLI for mapp_metadata_checker."""
 
+@main.command()  # note that the main function now can assign commands
+def subcommand1():
+    print('hello world')
+
+@main.command(help=table_tsver.__doc__)
+@click.argument('input_path')
+@click.argument('output_path')
+def tsver(input_path, output_path):
+    table_tsver(input_path, output_path)
 
 if __name__ == "__main__":
     main()
